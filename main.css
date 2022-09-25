@@ -1,0 +1,438 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('wine_cover.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin-bottom: 20%;
+  }
+  /* navigation */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: "montserrat";
+}
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    po
+}
+.nav_links li{
+    list-style-type: style none;
+}
+.nav_links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* burger menu*/
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all  0.3s ease;
+}
+@media screen and (max-width:1024px) {
+    .nav_links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav_links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav_links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }  
+    
+    .nav-active{
+        transform: translateX(0%);
+    }
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+    
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    
+} /* footer responsive
+.container {
+     max-width: 1024px;
+     margin: auto;
+     margin-bottom: 35px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    font-family: "montserrat";
+    
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+    position: relative; 
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 20px 10px 10px 10px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    font-family: "montserrat";
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    font-family: "montserrat";
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+*/
+
+/* grid menu */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 50px;
+  
+}
+.grid-item {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("wine.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+
+  }
+  .grid-item-1 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("vodka.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-2 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("whiskey.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-3 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("brendy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-4 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("vermuth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-5 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("cognac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-6 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("rum.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-7 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("gin.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .grid-item-8 {
+    background-color: rgba(15, 14, 14, 0.2);
+    border: 1px solid rgba(237, 231, 231, 0.8);
+    padding: 20px;
+    font-size: 12px ;
+    text-align: center;
+    color: rgba(237, 231, 231, 0.8);
+    font-family: "montserrat";
+    background-image: url("tequila.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+.grid-item h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}
+.grid-item-1 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-2 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-3 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-4 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-5 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-6 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-7 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}.grid-item-8 h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 130px;
+}
+/* contact information for contacts page */
+.contact-box {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border: 5px;
+    border-color: white;
+}
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba(74, 6, 6, 0.6    );
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(16, 15, 15);
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  
